@@ -10,12 +10,12 @@ import javafx.stage.Stage;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main  extends Application {
     public static void main(String[] args) {
-        Application.launch();
+        launch();
     }
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
         Scene scene = new Scene(root);
 
         stage.setScene(scene);
